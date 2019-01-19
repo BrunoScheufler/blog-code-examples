@@ -1,0 +1,31 @@
+{
+  "name": "basic-jaeger-node-gql-tracing",
+  "version": "1.0.0",
+  "description": "A simple Node.js service with a GraphQL endpoint",
+  "main": "build/index.js",
+  "repository": "https://github.com/BrunoScheufler/blog-code-examples",
+  "author": "Bruno Scheufler",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/graphql": "^14.0.5",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@opencensus/core": "^0.0.8",
+    "@opencensus/exporter-jaeger": "^0.0.8",
+    "@opencensus/nodejs": "^0.0.8",
+    "apollo-server": "^2.3.1",
+    "graphql": "^14.1.1",
+    "graphql-middleware": "^3.0.0"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "lint": "tslint --project .",
+    "test": "yarn build && yarn lint",
+    "start": "node build"
+  }
+}
