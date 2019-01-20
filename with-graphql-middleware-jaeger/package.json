@@ -1,0 +1,26 @@
+{
+  "name": "with-graphql-middleware-jaeger",
+  "version": "1.0.0",
+  "description": "Basic GraphQL web service with Jaeger middleware tracing",
+  "main": "build/index.js",
+  "repository": "https://github.com/BrunoScheufler/blog-code-examples",
+  "author": "Bruno Scheufler",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/graphql": "^14.0.5",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "apollo-server": "^2.3.1",
+    "graphql": "^14.1.1",
+    "graphql-middleware-jaeger": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "lint": "tslint --project ."
+  }
+}
