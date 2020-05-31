@@ -4,4 +4,4 @@ services:
     build: .
     env_file: .env
     environment:
-      BUILD_TAG: "${BUILD_TAG}"
+      BUILD_ID: "${BUILD_ID}"

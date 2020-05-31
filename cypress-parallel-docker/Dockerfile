@@ -8,4 +8,4 @@ RUN yarn install
 COPY cypress.json /app/
 COPY cypress /app/cypress
 
-CMD yarn cypress run --record --key $CYPRESS_SECRET_KEY --parallel --ci-build-id $BUILD_TAG
+CMD yarn cypress run --record --key $CYPRESS_SECRET_KEY --parallel --ci-build-id $BUILD_ID

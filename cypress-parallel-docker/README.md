@@ -16,12 +16,12 @@ and follow the steps outlined in [this setup guide](https://docs.cypress.io/guid
 ## Running your tests
 
 First, copy over `.env.sample` to `.env` and fill in your secret record key, used for authorizing with Cypress Dashboard.
-For each run, you also need to supply a unique identifier, referred to as `BUILD_TAG` This should be supplied dynamically.
+For each run, you also need to supply a unique identifier, referred to as `BUILD_ID` This should be supplied dynamically.
 
 ```bash
 # When running in CI, you're most likely able to use an identifier from your environment
 # https://docs.cypress.io/guides/guides/parallelization.html#CI-Build-ID-environment-variables-by-provider
-export BUILD_TAG="<randomly-generated identifier>"
+export BUILD_ID="<randomly-generated identifier>"
 
 docker-compose down -v
 
