@@ -15,7 +15,7 @@ and follow the steps outlined in [this setup guide](https://docs.cypress.io/guid
 
 ## Running your tests
 
-First, copy over `.env.sample` to `.env` and fill in your project key, used for communicating with Cypress Dashboard.
+First, copy over `.env.sample` to `.env` and fill in your secret record key, used for authorizing with Cypress Dashboard.
 For each run, you also need to supply a unique identifier, referred to as `BUILD_TAG` This should be supplied dynamically.
 
 ```bash
