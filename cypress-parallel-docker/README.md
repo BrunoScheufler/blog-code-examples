@@ -1,5 +1,7 @@
 # Cypress tests run in parallel powered by Docker Compose and Cypress Dashboard
 
+> This example code is part of a recent [blog post](https://brunoscheufler.com/blog/2020-05-31-bootstrapping-a-portable-cypress-setup-for-blazing-fast-browser-tests) on configuring Cypress to run in Docker
+
 This directory contains everything needed to run cypress tests in Docker compose, supporting dynamic parallelization (by starting multiple container instances),
 orchestrated by Cypress Dashboard.
 
