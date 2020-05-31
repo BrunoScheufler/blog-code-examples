@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  tests:
+    build: .
+    env_file: .env
+    environment:
+      BUILD_ID: "${BUILD_ID}"
