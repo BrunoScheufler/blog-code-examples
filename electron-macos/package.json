@@ -1,0 +1,36 @@
+{
+  "name": "electron-macos",
+  "productName": "electron-macos",
+  "version": "1.0.0",
+  "description": "Electron macOS application starter",
+  "main": "build/index.js",
+  "scripts": {
+    "clean": "rm -rf build dist out",
+    "build:ts": "tsc --project .",
+    "build:icons": "bash icons.sh",
+    "prebuild": "yarn clean",
+    "build": "yarn build:ts && yarn build:icons",
+    "prestart": "yarn build",
+    "start": "electron-forge start",
+    "prepackage": "yarn build",
+    "package": "env-cmd electron-forge package",
+    "premake": "yarn build",
+    "make": "env-cmd electron-forge make",
+    "prerelease": "yarn build",
+    "release": "env-cmd electron-forge publish"
+  },
+  "keywords": [],
+  "author": "Bruno Scheufler <bruno@brunoscheufler.com>",
+  "license": "MIT",
+  "config": {
+    "forge": "./build/forge.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.51",
+    "@electron-forge/maker-zip": "6.0.0-beta.51",
+    "electron": "9.0.0",
+    "env-cmd": "^10.1.0",
+    "typescript": "^3.9.3"
+  }
+}
