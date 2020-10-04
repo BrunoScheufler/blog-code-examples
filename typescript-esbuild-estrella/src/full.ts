@@ -1,4 +1,4 @@
-import { buildGraphQLServer } from "../server/graphql";
+import { buildGraphQLServer } from "./server/graphql";
 
 const { server, shutdown: shutdownServer } = buildGraphQLServer();
 

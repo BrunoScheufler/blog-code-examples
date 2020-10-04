@@ -1,4 +1,4 @@
-import { buildHttpServer } from "../server/http";
+import { buildHttpServer } from "src/server/http";
 
 const { server: httpServer, shutdown: shutdownHttpServer } = buildHttpServer();
 
