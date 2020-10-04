@@ -3,7 +3,7 @@
 const { build } = require("estrella");
 
 build({
-  entry: "./src/main.ts",
+  entry: "./src/entrypoints/bundle.ts",
   outfile: "./dist/main.js",
   target: "es2019",
   platform: "node",

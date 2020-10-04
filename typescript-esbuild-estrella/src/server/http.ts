@@ -1,6 +1,6 @@
 import { createServer } from "http";
 
-export function buildServer() {
+export function buildHttpServer() {
   const server = createServer((_, response) => {
     response.writeHead(200);
     response.end(JSON.stringify({ hello: "world" }));
